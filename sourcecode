@@ -1,0 +1,150 @@
+%-------------------------
+% Resume in Latex
+% Template (Standardized)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape John Doe} \\ \vspace{4pt}
+    {\large New York, USA} \\ \vspace{6pt}
+    \small \faPhone\ +1-123-456-7890 ~ 
+    \href{mailto:johndoe@email.com}{\faEnvelope\ johndoe@email.com} ~ 
+    \href{https://www.linkedin.com/in/johndoe}{\faLinkedin\ linkedin.com/in/johndoe} ~
+    \href{https://github.com/johndoe}{\faGithub\ github.com/johndoe}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+Motivated computer science student passionate about software development and AI/ML applications. Skilled in problem-solving, quick learning, and building impactful projects. Seeking opportunities to contribute to innovative teams and expand technical expertise.
+
+%-----------SKILLS-----------
+\section{Skills}
+\textbf{Programming \& Querying:} Python, C, Java, MySQL \\
+\textbf{Web Technologies:} HTML, CSS, JavaScript, React \\
+\textbf{Tools:} GitHub, VS Code, MS Excel \\
+\textbf{Soft Skills:} Communication, Adaptability, Time Management, Teamwork, Leadership \\
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+      {\textbf{Android Malware Detection using Deep Learning} }{}
+      \resumeItemListStart
+        \resumeItem{Developed a system to detect malicious apps using machine learning techniques.}
+        \resumeItem{Implemented classification models achieving over 90\% detection accuracy.}
+        \resumeItem{Compared performance of Extra Trees Classifier vs Logistic Regression.}
+      \resumeItemListEnd
+
+  \resumeProjectHeading
+      {\textbf{Career Explorer Platform | MongoDB, React, Node.js} }{}
+      \resumeItemListStart
+        \resumeItem{Built a career guidance web app with blogs, role insights, and recommendations.}
+        \resumeItem{Implemented semantic search to match users with relevant career paths.}
+        \resumeItem{Enhanced user experience with intuitive UI and optimized database queries.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of XYZ, New York}{2022 -- 2026}
+    {Bachelor of Technology in Computer Science}{CGPA: 3.6/4.0}
+  \resumeSubheading
+    {ABC High School, New York}{2020 -- 2022}
+    {High School Diploma (Science)}{Percentage: 85\%}
+\resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\begin{itemize}[leftmargin=*]
+  \item 
+    \href{https://coursera.org}{Google AI Essentials} \hspace{1cm}
+    \href{https://udemy.com}{Android Development Bootcamp}
+  \item 
+    \href{https://credly.com}{Cisco Networking} \hspace{1cm}
+    \href{https://aws.amazon.com/certification}{AWS Cloud Practitioner} \hspace{1cm}
+    \href{https://linkedin.com/learning}{GitHub Copilot Fundamentals}
+\end{itemize}
+
+%-----------CODING PROFILES-----------
+\section{Coding Profiles}
+\begin{itemize}[leftmargin=*]
+  \item 
+   \href{https://leetcode.com/johndoe}{LeetCode} \hspace{1cm}
+   \href{https://www.codechef.com/users/johndoe}{CodeChef} \hspace{1cm}
+   \href{https://www.hackerrank.com/johndoe}{HackerRank}
+\end{itemize}
+
+%-----------HACKATHONS-----------
+\section{Hackathons}
+\begin{itemize}[leftmargin=*]
+  \item Google Solution Challenge 2024
+  \item Google Solution Challenge 2025
+\end{itemize}
+
+\end{document}
